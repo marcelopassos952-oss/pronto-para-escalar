@@ -234,7 +234,8 @@ function buildWhatsAppLink(payload: {
     `WhatsApp: ${w || payload.whatsapp}`,
     "",
     `Resultado: ${payload.title}`,
-    `Score: ${payload.score}`,
+    `Score: ${payload.score}
+    \nGostatia de entender os próximos passos para escalar com segurança`,
   ].join("\n");
 
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
